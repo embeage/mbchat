@@ -1,0 +1,77 @@
+.root {
+    -fx-background-color: #303336;
+}
+
+.label {
+
+        -fx-font-family: 'JetBrains Mono';
+        -fx-font-size: 13px;
+        -fx-font-weight: bold;
+        -fx-text-fill: #D3D3D3;
+        -fx-background-color: #2C2F32;
+
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.scroll-pane {
+   -fx-background-color: transparent;
+}
+
+.separator *.line {
+    -fx-border-color: #D3D3D3;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+}
+
+.list-view {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+
+}
+
+.list-cell {
+
+    -fx-background-color: #2C2F32;
+    /*-fx-background-color: #303336;*/
+    -fx-text-fill: #D3D3D3;
+
+}
+
+InlineCssTextArea {
+
+    -fx-background-color: #303336;
+}
+
+.list-cell:filled:hover {
+
+    -fx-text-fill: white;
+}
+
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #232629;
+    -fx-background-radius: 5em;
+}
+
+
+

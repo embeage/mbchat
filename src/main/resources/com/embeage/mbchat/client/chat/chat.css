@@ -1,0 +1,44 @@
+.root {
+    -fx-background-color: #303336;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #232629;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: #232629;
+
+}
+
+.tab-pane .tab:hover {
+    /* Highlights tab when hovering over it. */
+    -fx-background-color: derive(#232629, 5%);
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #303336;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: derive(#305a85, 50%);
+}
+
+.text-field {
+    -fx-background-color: #4e5257;
+    -fx-text-fill: "white";
+}

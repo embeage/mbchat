@@ -1,0 +1,71 @@
+.root {
+    -fx-background-color: #303336;
+}
+
+#errorLabel {
+    -fx-text-fill: #b33127;
+}
+
+.label {
+    -fx-font-family: 'JetBrains Mono';
+    -fx-font-size: 13px;
+
+    -fx-text-fill: "white";
+}
+
+#titleLabel {
+
+    -fx-font-family: 'Lucida Console';
+    -fx-font-size: 40px;
+    -fx-font-weight: normal;
+    -fx-alignment: center;
+
+}
+
+.text-field {
+
+    -fx-background-color: #4e5257;
+    -fx-text-fill: "white";
+}
+
+.menu-bar {
+    -fx-background-color: #232629;
+}
+
+.menu: hover {
+    -fx-background-color: derive(#232629, 5%);
+}
+
+.menu-item {
+
+    -fx-background-color: #232629;
+    -fx-text-fill: "white";
+
+}
+
+.menu-item: hover {
+
+    -fx-background-color: derive(#232629, 5%);
+
+}
+
+.context-menu {
+
+    -fx-background-color: #232629;
+
+}
+
+.button {
+    -fx-background-color: #305a85;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: "white";
+}
+.button:hover {
+    /* Highlights button when hovering over it. */
+    -fx-background-color: derive(#305a85, -10%);
+}
+.button:pressed {
+  -fx-translate-y: 1;
+}

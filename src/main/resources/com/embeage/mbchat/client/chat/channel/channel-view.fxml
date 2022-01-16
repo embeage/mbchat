@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import org.fxmisc.richtext.InlineCssTextArea?>
+
+<?import org.fxmisc.flowless.VirtualizedScrollPane?>
+<HBox stylesheets="@channel.css" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.embeage.mbchat.client.chat.channel.ChannelController">
+      <!-- Note: VirtualizedScrollPane not in SceneBuilder! -->
+      <VirtualizedScrollPane HBox.hgrow="ALWAYS">
+         <content>
+            <InlineCssTextArea fx:id="textArea" autoHeight="true" editable="false" wrapText="true"/>
+         </content>
+      </VirtualizedScrollPane>
+   <VBox prefHeight="200.0" prefWidth="166.0">
+      <HBox.margin>
+         <Insets/>
+      </HBox.margin>
+      <Label fx:id="onlineLabel" prefHeight="16.0" prefWidth="213.0" text="Online" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets/>
+         </VBox.margin>
+      </Label>
+      <ListView fx:id="userList" prefHeight="184.0" prefWidth="151.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets/>
+         </VBox.margin>
+      </ListView>
+   </VBox>
+</HBox>
